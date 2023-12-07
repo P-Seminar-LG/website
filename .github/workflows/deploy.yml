@@ -1,0 +1,50 @@
+name: Automated Deployment Pipeline
+run-name: ADP
+on:
+  push:
+    branches:
+     - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Checkout Source Branch
+        uses: actions/checkout@v4
+        with:
+         path: main
+         ref: main
+      - name: Checkout Deployment Branch
+        uses: actions/checkout@v4
+        with:
+          repository: p-seminar-lg/p-seminar-lg.github.io
+          path: site
+          ref: site
+      - name: Installing Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'latest'
+      - name: Installing Astro
+        run: npm install astro
+      - name: Building website
+        run: npm run build
+        working-directory: ${{ github.workspace }}/main/ 
+      - name: Clear Site Branch
+        run: rm -rf *
+        working-directory: ${{ github.workspace }}/site/ 
+      - name: Copying files
+        run: cp ${{ github.workspace }}/main/dist/* ${{ github.workspace }}/site/
+        working-directory: ${{ github.workspace }}/site/
+      - name: Commiting to site branch
+        run: |
+          date > generated.txt
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "Automated Build"
+          git push origin
+        working-directory: ${{ github.workspace }}/site/
+      
