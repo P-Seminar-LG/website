@@ -1,0 +1,63 @@
+:root {
+
+/*Color palette*/
+
+--color-text: black;
+--color-elements: white;
+--color-third: grey;
+
+/*Font family*/
+
+--font-headlines: ;
+--font-text:;
+}
+
+
+@font-face {
+    font-family: ;
+    src: url(../../public/fonts/);
+}
+
+
+@font-face {
+    font-family: ;
+    src: url(../../public/fonts/);
+}
+
+
+
+
+
+body {
+    margin: 0;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+font-family: var(--font-headlines);
+}
+
+
+p {
+    font-family: var(--font-text);
+}
+
+a {
+    font-family: var(--font-text);
+}
+
+
+
+.tc {
+    text-align: center;
+}
+
+
+#footer {
+    margin: 0px;
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--color-elements);
+}

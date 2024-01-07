@@ -1,13 +1,22 @@
 ---
 import '../styles/global.css'
+import Footer from '../components/footer.astro'
+import Header from '../components/header.astro'
 ---
 
-<html>
-	<header>
-	<title>P-Seminar</title>
-	</header>
+<html lang="de">
+	<head>
+		<title>P-Seminar</title>
+		<meta author="p-seminar">
+		<meta desciption="Wir bringen innere Organe näher">
+		<meta charset="UTF-8">
+	</head>
 	<body>
-		<h1>Willkommen</h1>
-		<p>Auf der Herz-lichsten Website der Welt</p>
+		<Header />
+		<h1 class="tc">Willkommen</h1>
+		<p class="tc">Auf der Herz-lichsten Website der Welt</p>
+		<Footer />
 	</body>
 </html>
+
+
