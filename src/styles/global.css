@@ -3,7 +3,7 @@
 /*Color palette*/
 
 --color-text: black;
---color-elements: white;
+--color-elements: grey;
 --color-third: grey;
 
 /*Font family*/
@@ -53,6 +53,13 @@ a {
 }
 
 
+#header {
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+}
+
+
 #footer {
     margin: 0px;
     display: flex;
@@ -60,4 +67,10 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     background-color: var(--color-elements);
+    position: absolute;
+    height: 3rem;
+    align-items: center;
+    color: var(--color-text);
+    bottom: 0;
+    width: 100%;
 }
