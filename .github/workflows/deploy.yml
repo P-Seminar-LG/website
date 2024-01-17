@@ -36,7 +36,7 @@ jobs:
         run: rm -rf *
         working-directory: ${{ github.workspace }}/site/ 
       - name: Copying files
-        run: cp ${{ github.workspace }}/main/dist/* ${{ github.workspace }}/site/
+        run: cp -r ${{ github.workspace }}/main/dist/* ${{ github.workspace }}/site/
         working-directory: ${{ github.workspace }}/site/
       - name: Commiting to site branch
         run: |
