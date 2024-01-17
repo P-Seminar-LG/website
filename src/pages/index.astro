@@ -12,10 +12,14 @@ import Header from '../components/header.astro'
 		<meta charset="UTF-8">
 	</head>
 	<body>
-		<Header />
-		<h1 class="tc">Willkommen</h1>
-		<p class="tc">Auf der Herz-lichsten Website der Welt</p>
-		<Footer />
+		<div class="layout">
+			<Header />
+			<div id="mainpage-content">
+				<h1 class="tc">Willkommen</h1>
+				<p class="tc">Auf der Herz-lichsten Website der Welt</p>
+			</div>
+			<Footer id="test"/>
+		</div>
 	</body>
 </html>
 
