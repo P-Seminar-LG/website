@@ -123,15 +123,18 @@ a {
 .sidebar {
     width: 15vw;
     background-color: var(--color-sidebar);
-    flex-grow: 1;
 }
 
 
 .sidebar > h3 {
-    color: var(--font-text);
+    color: var(--color-text);
     text-indent: 4rem;  
 }
 
+.sidebar > h2 {
+    color: var(--color-text);
+    text-indent: 2rem;
+}
 
 
 #impressum-content {
@@ -139,7 +142,7 @@ a {
 }
 
 
-#mainpage-content {
+.mainpage-content {
     margin-bottom: auto;
 }
 
@@ -166,4 +169,11 @@ a {
 .no-lu {
     text-decoration: none;
     color: var(--color-text);
+}
+
+
+
+.main-container {
+    display: flex;
+    flex-grow: 1;
 }
