@@ -134,6 +134,36 @@ a {
 
 
 
+#impressum-content {
+    margin: 0 5vw auto;
+}
+
+
 #mainpage-content {
     margin-bottom: auto;
+}
+
+#aboutpage-content {
+    margin: 0 5vw auto;
+}
+
+#aboutpage-content * {
+    width: 75ch;
+}
+
+.impressum-h {
+    margin: 1rem 0;
+}
+
+#impressum-list {
+    margin-left: 1rem;
+}
+
+.impressum-text {
+    width: 45ch;
+}
+
+.no-lu {
+    text-decoration: none;
+    color: var(--color-text);
 }
