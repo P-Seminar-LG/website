@@ -92,7 +92,6 @@ a {
 .layout {   
     display: flex; 
     flex-direction: column;
-    height: 100vh;
 }
 
 
@@ -154,6 +153,14 @@ a {
 }
 
 
+
+
+
+.index {
+    display: grid;
+    grid-template-columns: repeat(10, 10vw);
+    grid-template-rows: repeat(10, 10vw);
+}
 
 
 /* Desktop and Tablet Layout*/
