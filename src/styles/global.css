@@ -27,8 +27,6 @@
 }
 
 
-
-
 * {
     margin: 0;
     padding: 0;
@@ -53,17 +51,7 @@ a {
     font-family: var(--font-text);
 }
 
-
-
-.tc {
-    text-align: center;
-}
-
-
 /* The Header */
-
-
-
 
 #header * {
     text-decoration: none;
@@ -73,7 +61,7 @@ a {
     font-weight: 600;
 }
 
-#header-home {
+#header svg {
     height: 1.5rem;
 }
 
@@ -118,15 +106,6 @@ a {
 }
 
 
-/* Impressum */
-
-.impressum-h {
-    margin: 1rem 0;
-}
-
-.impressum-text {
-    width: 45ch;
-}
 
 .no-lu {
     text-decoration: none;
@@ -194,13 +173,22 @@ a {
         gap: 3rem;
     }
 
-    .main-container {
+    .mainpage-content {
         display: flex;
     }
     
     .sidebar {
         width: 15vw;
     }
+
+    h1, h2, h3, h4, h5, h6 {
+        margin: 1rem 0;
+    }
+    
+    p {
+        width: 45ch;
+    }
+    
 
 }
 
@@ -209,11 +197,11 @@ a {
 @media (max-width: 500px) {
    #footer {
     flex-direction: column;
-    height: 15rem;
+    height: 10rem;
     gap: 0.4rem;
    }
 
-   .main-container {
+   .mainpage-content {
     display: flex;
     flex-direction: column;
 }
@@ -222,5 +210,14 @@ a {
         width: 90vw;
         margin: 0 auto;
     }
+
+    h1, h2, h3, h4, h5, h6 {
+        margin: 0.8rem 0;
+    }
+    
+    p {
+        width: 30ch;
+    }
+    
 
 }
