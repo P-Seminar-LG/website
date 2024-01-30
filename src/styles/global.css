@@ -92,6 +92,7 @@ a {
 .layout {   
     display: flex; 
     flex-direction: column;
+    min-height: 100vh;
 }
 
 
@@ -160,6 +161,11 @@ a {
     display: grid;
     grid-template-columns: repeat(10, 10vw);
     grid-template-rows: repeat(10, 10vw);
+}
+
+.about {
+    margin: 0 auto auto;
+    width: 90%;
 }
 
 
