@@ -10,9 +10,10 @@ import Header from '../components/header.astro'
 		<meta author="p-seminar">
 		<meta desciption="Wir bringen Schüler:innen innere Organe näher">
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	</head>
 	<body>
-		<div class="layout impressum">
+		<div class="layout">
 			<Header />
 			<div id="impressum-content">
 				<h1>Impressum</h1>
@@ -22,11 +23,12 @@ import Header from '../components/header.astro'
 				<p>Romina Hader (Anschrift s.o.)</p>
                 <h2 class="impressum-h">Kontakt: </h2>
                 <p>contact[at]feuerstein.dev</p>
-				<p class="impressum-text"><br>Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p>
+				<h2 class="impressum-h">Haftungsauschluss</h2>
+				<p class="impressum-text">Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p>
 				<h2 class="impressum-h">Datenschutz</h2>
-				<p>Diese Website verwendet keine Tracker oder ähnliches. Sie ist jedoch auf Github Pages gehostet, weshalb hier die Datenschutzbestimmungen von <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement">Github</a> beachtet werden müssen.</p>
+				<p class="impressum-text">Diese Website verwendet keine Tracker oder ähnliches. Sie ist jedoch auf Github Pages gehostet, weshalb hier die Datenschutzbestimmungen von <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement">Github</a> beachtet werden müssen.</p>
 				<h2 class="impressum-h">Lizenz</h2>
-				<p>Unsere Inhalte sind unter einer CC-BY-SA Lizenz veröffentlicht. Du kannst sie dementsprechen verwenden, mssut uns jedoch als Autoren angeben und musst sie desweiteren unter den selben Lizenzbestimmungen veröffentlichen. EIne genauere Beschreibung findest du <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">hier</a></p>
+				<p class="impressum-text">Unsere Inhalte sind unter einer CC-BY-SA Lizenz veröffentlicht. Du kannst sie dementsprechend verwenden, musst uns jedoch als Autoren angeben und musst sie desweiteren unter den selben Lizenzbestimmungen veröffentlichen. EIne genauere Beschreibung findest du <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">hier</a></p>
 			</div>
 			<Footer />
 		</div>
