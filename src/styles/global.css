@@ -1,17 +1,17 @@
 :root {
 
-/*Color palette*/
+    /*Color palette*/
 
---color-text: black;
---color-footer: grey;
---color-header: none;
---color-sidebar: grey;
---color-third: grey;
+    --color-text: black;
+    --color-footer: grey;
+    --color-header: none;
+    --color-sidebar: grey;
+    --color-third: grey;
 
-/*Font family*/
+    /*Font family*/
 
---font-headlines: ;
---font-text:;
+    --font-headlines: ;
+    --font-text: ;
 }
 
 
@@ -38,8 +38,13 @@ body * {
 
 
 
-h1, h2, h3, h4, h5, h6 {
-font-family: var(--font-headlines);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-headlines);
 }
 
 
@@ -49,6 +54,9 @@ p {
 
 a {
     font-family: var(--font-text);
+    text-decoration: none;
+    color: var(--color-text);
+
 }
 
 /* The Header */
@@ -76,7 +84,7 @@ a {
     color: var(--color-text);
 }
 
-#footer > * {
+#footer>* {
     text-transform: uppercase;
     font-family: inter;
     font-weight: 800;
@@ -89,8 +97,8 @@ a {
 
 /* The layout class is used to define the overall layout of the page with flexbox*/
 
-.layout {   
-    display: flex; 
+.layout {
+    display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
@@ -103,13 +111,6 @@ a {
 
 .mainpage-content {
     margin-bottom: auto;
-}
-
-
-
-.no-lu {
-    text-decoration: none;
-    color: var(--color-text);
 }
 
 
@@ -133,14 +134,14 @@ a {
     margin-bottom: auto;
 }
 
-.sidebar > * {
+.sidebar>* {
     text-align: center;
     transition: transform 0.3s;
     text-align: center;
     margin: 0 auto;
 }
 
-.sidebar > *:hover {
+.sidebar>*:hover {
     text-align: center;
     border: 0.5rem solid rgb(243, 141, 103);
     transform: scale(1.2);
@@ -149,7 +150,7 @@ a {
     padding: 0 2rem;
 }
 
-.sidebar > *:first-child {
+.sidebar>*:first-child {
     margin-top: 2rem;
 }
 
@@ -189,48 +190,58 @@ a {
     .mainpage-content {
         display: flex;
     }
-    
+
     .sidebar {
         width: 15vw;
     }
 
-    h1, h2, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         margin: 1rem 0;
     }
-    
+
     p {
         width: 45ch;
     }
-    
+
 
 }
 
 /* Mobile Layout*/
 
 @media (max-width: 500px) {
-   #footer {
-    flex-direction: column;
-    height: 10rem;
-    gap: 0.4rem;
-   }
+    #footer {
+        flex-direction: column;
+        height: 10rem;
+        gap: 0.4rem;
+    }
 
-   .mainpage-content {
-    display: flex;
-    flex-direction: column;
-}
+    .mainpage-content {
+        display: flex;
+        flex-direction: column;
+    }
 
     .sidebar {
         width: 90vw;
         margin: 0 auto;
     }
 
-    h1, h2, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         margin: 0.8rem 0;
     }
-    
+
     p {
         width: 30ch;
     }
-    
+
 
 }
