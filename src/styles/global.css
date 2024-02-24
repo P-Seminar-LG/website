@@ -7,11 +7,6 @@
     --color-header: none;
     --color-sidebar: grey;
     --color-third: grey;
-
-    /*Font family*/
-
-    --font-headlines: ;
-    --font-text: ;
 }
 
 
@@ -22,7 +17,7 @@
 
 
 @font-face {
-    font-family: ;
+    font-family: Arial, sans-serif;
     src: url(../../public/fonts/);
 }
 
@@ -119,6 +114,7 @@ a {
 .content {
     height: calc(100vh - 9rem);
     overflow-y: auto;
+    flex-grow: 1;
 }
 
 
