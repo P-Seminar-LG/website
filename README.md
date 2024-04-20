@@ -12,7 +12,7 @@ Jeglicher Quellcode der Website ist unter einer GNU GPLv3 Lizenz veröffentlicht
 Wir akzeptieren Pull-Requests, sofern diese Fehler jeglicher Art beheben oder von uns als anderweitig sinnvoll für das Projekt angesehen werden (z.B. Feature Requests). Bei Fragen hierzu öffnet gerne einen Issue oder schreibt eine Mail.
 
 
-## Contributions
+## Lokaler Build // Unterstütze die Entwicklung
 
 1. Repository klonen
 
@@ -30,4 +30,11 @@ npm install
 3. Dev Server starten
 ```
 npm run dev
+```
+
+4. Änderungen vornehmen :D
+
+5. Pushen & PR-Öffnen oder
+```
+npm run build
 ```
