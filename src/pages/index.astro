@@ -8,13 +8,32 @@ import Umami from "../components/umami.astro";
 <html lang="de">
   <head>
     <title>Me from the inside</title>
-    <meta name="author" content="P-Seminar Laurentius Gymasium 2024"/>
-    <meta name="desciption" content="Wir bringen Schüler:innen innere Organe näher" />
+    <meta name="author" content="P-Seminar Laurentius Gymasium 2024" />
+    <meta
+      name="desciption"
+      content="Wir bringen Schüler:innen innere Organe näher"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <Umami />
   </head>
   <body>
-   
+    <header>
+      <h1 id="headline">Me from the Inside</h1>
+      <p>Eine Reise durch den Körper</p>
+    </header>
+    <div id="organe">
+      <div>
+        <a href="/herz"><img src="/img/heart.webp" /></a><p>Herz</p>
+      </div>
+      <div>
+        <a href="/gehirn"><img src="/img/brain.webp" /></a><p>Gehirn</p>
+      </div>
+      <div>
+        <a href="/lunge"><img src="/img/lung.webp" /></a><p>Lunge</p>
+      </div>
+    </div>
+    <img id="cat" src="/img/cat.svg">
+    <a href="/impressum"><p>Impressum</p></a>
   </body>
 </html>

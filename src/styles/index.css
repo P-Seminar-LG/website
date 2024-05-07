@@ -1,9 +1,19 @@
 
 /*Declaring (color) variables*/
 :root {
-    --color-bg: #000000;
+    --color-bg: #F1EAE8;
     --color-text: #000000;
-    --color-headings: #000000;
+    --color-headings: #ACCBE1;
+}
+
+@font-face {
+    font-family: barlow;
+    src: url(/fonts/barlow.ttf);
+}
+
+@font-face {
+    font-family: barlowbold;
+    src: url(/fonts/barlowbold.ttf);
 }
 
 
@@ -15,4 +25,49 @@
 
 body {
     background-color: var(--color-bg);
+}
+
+#headline {
+    text-align: center;
+    font-size: 5rem;
+    font-family: barlowbold;
+    color: var(--color-bg);
+    text-transform: uppercase;
+}
+
+header {
+    background-color: var(--color-headings);
+    width: 80%;
+    margin: 2rem auto 0;
+    padding: 1.5rem 0;
+}
+
+header p {
+    text-align: center;
+    color: var(--color-bg);
+    font-size: 1.5rem;
+    font-family: barlowbold;
+}
+
+#organe {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+#organe img {
+    width: 15vw;
+    margin: 0 4rem;
+}
+
+
+#organe p {
+    color: var(--color-headings);
+    font-size: 2.5rem;
+    font-family: barlowbold;
+    text-align: center;
+}
+
+#cat {
+    width: 10vw;
 }
