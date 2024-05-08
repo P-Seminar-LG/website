@@ -88,3 +88,14 @@ header p {
     font-size: 1.5rem;
     margin: auto 0 2rem 2rem
 }
+
+
+.zoom_transition:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ;
+}
+
+.zoom_transition {
+    transform: scale(1);
+    transition: transform 0.5s ;
+}
