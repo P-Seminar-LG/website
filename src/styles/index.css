@@ -71,3 +71,20 @@ header p {
 #cat {
     width: 10vw;
 }
+
+#catcontainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#catcontainer #cat {
+    margin-left: auto;
+}
+
+#impressum {
+    font-family: barlow;
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: 1.5rem;
+    margin: auto 0 2rem 2rem
+}
