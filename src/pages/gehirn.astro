@@ -2,6 +2,7 @@
 import Header from "../components/header.astro";
 import Footer from "../components/footer.astro";
 import "../styles/global.css";
+import "../styles/gehirn.css"
 ---
 
 <html lang="de">
@@ -13,24 +14,24 @@ import "../styles/global.css";
   </head>
   <body>
     <div class="layout">
-      <Header />
-      <div class="mainpage-content">
-        <div class="sidebar">
-          <h1><a href="#sb-inhalt">Inhalt</a></h1>
-          <h3><a href="#sb-aufbau">Aufbau</a></h3>
-          <h3><a href="#sb-funktion">Funktion</a></h3>
-          <h3><a href="#sb-sezieren">Sezieren</a></h3>
-          <h3><a href="#sb-berufe">Berufe</a></h3>
-        </div>
-        <div class="content">
-          <h1 id="sb-inhalt">Das Gehirn</h1>
-          <h2 id="sb-aufbau"></h2>
-          <h2 id="sb-funktion"></h2>
-          <h2 id="sb-sezieren"></h2>
-          <h2 id="sb-berufe"></h2>
-        </div>
+      <div class="container">
+        <nav>
+          <img src="/img/cat.webp">
+          <h1>Inhalt</h1>
+          <h2><a href="#lunge-aufbau">Aufbau</a></h2>
+          <h2>Funktion</h2>
+          <h2>Krankheiten</h2>
+          <h2>Sezieren</h2>
+          <h2>Experten</h2>
+        </nav>
+        <main>
+          <h2 id="lunge-aufbau">Aufbau</h2>
+          <h2>Funktion</h2>
+        </main>
+        <header>
+          <h1>Das Gehirn</h1>
+        </header>
       </div>
-      <Footer />
     </div>
   </body>
 </html>
