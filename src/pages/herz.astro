@@ -2,6 +2,7 @@
 import Header from "../components/header.astro";
 import Footer from "../components/footer.astro";
 import "../styles/global.css";
+import "../styles/herz.css"
 ---
 
 <html lang="de">
@@ -13,24 +14,20 @@ import "../styles/global.css";
   </head>
   <body>
     <div class="layout">
-      <Header />
-      <div class="mainpage-content">
-        <div class="sidebar">
+        <nav>
           <h1><a href="#sb-inhalt">Inhalt</a></h1>
-          <h3><a href="#sb-aufbau">Aufbau</a></h3>
-          <h3><a href="#sb-function">Funktion</a></h3>
-          <h3><a href="#sb-sezieren">Sezieren</a></h3>
-          <h3><a href="#sb-berufe">Berufe</a></h3>
-        </div>
-        <div class="content">
+          <h2><a href="#sb-aufbau">Aufbau</a></h2>
+          <h2><a href="#sb-function">Funktion</a></h2>
+          <h2><a href="#sb-sezieren">Sezieren</a></h2>
+          <h2><a href="#sb-berufe">Berufe</a></h2>
+        </nav>
+        <main class="content">
           <h1 id="sb-inhalt">Das Herz</h1>
           <h2 id="sb-aufbau">Aufbau</h2>
           <h2 id="sb-funktion">Funktion</h2>
           <h2 id="sb-sezieren">Sezieren</h2>
           <h2 id="sb-berufe">Berufe</h2>
-        </div>
-      </div>
-      <Footer />
+        </main>
     </div>
   </body>
 </html>

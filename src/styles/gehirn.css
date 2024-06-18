@@ -2,7 +2,7 @@
     --color-navbar: #DD7373;
     --color-bg: #F1EAE8;
     --color-text: #000000;
-    --color-headings: #ACCBE1;
+    --color-headings: #F4B262;
 }
 
 
@@ -33,11 +33,14 @@ main {
 
 header {
     grid-area: 1 / 2 / 2 / -1;
-    background-color: var(--color-headings);
 }
 
 header * {
     color: var(--color-bg);
     text-align: center;
+    background-color: var(--color-headings);
+    width: fit-content;
+    padding: 1rem;
+    margin: 0 auto;
 }
 
