@@ -1,7 +1,5 @@
 ---
-import Header from "../components/header.astro";
-import Footer from "../components/footer.astro";
-import "../styles/global.css";
+import "../styles/layout.css"
 import "../styles/lunge.css"
 ---
 
@@ -13,7 +11,16 @@ import "../styles/lunge.css"
   </head>
   <body>
     <div class="layout">
-     <!--  <Header /> -->
+      <nav>
+          <h1>Inhalt</h1>
+          <h2>Aufbau</h2>
+          <h2>Funktion</h2>
+          <h2>Krankheiten</h2>
+          <h2>Sezieren</h2>
+          <h2>Experten</h2>
+      </nav>
+      <main></main>
+     <!--  <Header />
       <div class="container">
         <nav>
           <h1>Inhalt</h1>
@@ -29,7 +36,7 @@ import "../styles/lunge.css"
           <h2>Funktion</h2>
         </main>
       </div>
-      <!--       <div class="mainpage-content">
+          <div class="mainpage-content">
         <div class="sidebar">
           <h1><a href="#sb-inhalt">Inhalt</a></h1>
           <h3><a href="#sb-aufbau">Aufbau</a></h3>
@@ -48,6 +55,6 @@ import "../styles/lunge.css"
     -->
 
       <!--<Footer />-->
-    </div>
+      </div>
   </body>
 </html>

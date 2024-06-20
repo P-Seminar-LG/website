@@ -1,2 +1,60 @@
 /* Everything Layout specific */
 
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 100vh;
+}
+
+
+/* NAVBAR Styling*/
+
+nav {
+    grid-area: 1 / 1 / 6 / 2;
+    background-color: var(--color-navbar);
+}
+
+nav * {
+    text-align: center;
+    color: var(--color-bg);
+}
+
+nav h1 {
+    font-size: 2.5rem;
+}
+
+nav h2 {
+    font-size: 1.6rem;
+}
+
+
+
+/* Main Content Styling*/
+
+
+main {
+    grid-area: 1 / 2 / 6 / 6;
+    background-color: var(--color-bg);
+}
+
+
+/* Mobile Layout */ 
+
+
+@media (max-width: 600px) {
+    .layout {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+
