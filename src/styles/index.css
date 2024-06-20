@@ -6,23 +6,6 @@
     --color-headings: #ACCBE1;
 }
 
-@font-face {
-    font-family: barlow;
-    src: url(/fonts/barlow.ttf);
-}
-
-@font-face {
-    font-family: barlowbold;
-    src: url(/fonts/barlowbold.ttf);
-}
-
-
-/* Reset defaults */
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body {
     background-color: var(--color-bg);
 }

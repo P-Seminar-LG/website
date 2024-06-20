@@ -1,10 +1,12 @@
 /* Everything Layout specific */
 
-
-* {
-    margin: 0;
-    padding: 0;
+:root {
+    --navbar-fsize: 1.6rem; /*Navbar (Categories)*/
+    --navbar-heading-fsize: 2.5rem; /*Navbar (Heading)*/
+    --main-heading-fsize: 1.6rem; /*Heading (Sub Category)*/
+    --main-mainheading-fsize: 2.5rem; /*Main Heading (Organ)*/
 }
+
 
 .layout {
     display: grid;
@@ -13,25 +15,35 @@
     height: 100vh;
 }
 
+* {
+    font-family: barlowbold;
+}
+
 
 /* NAVBAR Styling*/
 
 nav {
     grid-area: 1 / 1 / 6 / 2;
     background-color: var(--color-navbar);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav img {
+    width: 40%;
 }
 
 nav * {
-    text-align: center;
     color: var(--color-bg);
 }
 
 nav h1 {
-    font-size: 2.5rem;
+    font-size: var(--navbar-heading-fsize);
 }
 
 nav h2 {
-    font-size: 1.6rem;
+    font-size: var(--navbar-fsize);
 }
 
 
@@ -43,6 +55,23 @@ main {
     grid-area: 1 / 2 / 6 / 6;
     background-color: var(--color-bg);
 }
+
+
+main h1 {
+    color: var(--color-navbar);
+    font-size: var(--main-mainheading-fsize);
+}
+
+main h2 {
+    background-color: var(--color-navbar);
+    width: fit-content;
+    color: var(--color-bg);
+    margin: 0 auto;
+    font-size: var(--main-heading-fsize);
+    padding: 0.5rem 1rem;
+}
+
+
 
 
 /* Mobile Layout */ 
