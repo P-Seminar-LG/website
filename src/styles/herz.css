@@ -1,46 +1,5 @@
 :root {
     --color-navbar: #ACCBE1;
-    --color-bg: ;
-    --color-text: #000000;
-    --color-headings: #F4B262;
+    --color-bg: #F1EAE8;
 }
 
-
-.layout {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    height: 100vh;
-}
-
-
-/* NAVBAR */
-
-nav {
-    grid-area: 1 / 1 / 5 / 2;
-    background-color: var(--color-navbar);
-}
-
-nav * {
-    text-align: center;
-}
-
-nav h1:first-of-type {
-    font-size: 2.75rem;
-}
-
-nav h2 {
-    font-size: 1.5rem;
-}
-
-
-
-main {
-    grid-area: 1 / 2 / 6 / 6;
-}
-
-main h1 {
-    color: var(--color-headings);
-    margin: 0 auto;
-    width: fit-content;
-}

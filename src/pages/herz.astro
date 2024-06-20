@@ -1,5 +1,8 @@
 ---
-import "../styles/herz.css"
+import "../styles/layout.css";
+import "../styles/herz.css";
+import "../styles/global.css"
+import Umami from "../components/umami.astro";
 ---
 
 <html lang="de">
@@ -8,10 +11,12 @@ import "../styles/herz.css"
     <meta author="p-seminar" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <Umami />
   </head>
   <body>
     <div class="layout">
         <nav>
+          <img src="/img/cat.webp">
           <h1><a href="#sb-inhalt">Inhalt</a></h1>
           <h2><a href="#sb-aufbau">Aufbau</a></h2>
           <h2><a href="#sb-function">Funktion</a></h2>
