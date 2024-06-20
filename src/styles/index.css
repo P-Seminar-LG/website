@@ -90,9 +90,22 @@ header p {
 
 
 @media (max-width: 600px) {
+    #headline {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
     #organe {
         flex-direction: column;
         align-items: center;
         justify-content: baseline;
+    }
+
+    #organe img {
+        width: 80%;
+        margin: 0;
     }
 }
