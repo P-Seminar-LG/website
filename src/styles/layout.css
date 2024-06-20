@@ -30,7 +30,12 @@ nav {
     flex-direction: column;
 }
 
-nav img {
+nav #cat {
+    display: flex;
+    justify-content: center;
+}
+
+nav #cat img {
     width: 40%;
 }
 
