@@ -1,20 +1,20 @@
 ---
 import "../styles/global.css";
+import "../styles/extra.css";
 import Umami from "../components/umami.astro";
 ---
 
 <html lang="de">
   <head>
     <title>P-Seminar</title>
-    <meta author="p-seminar" />
-    <meta desciption="Wir bringen Schüler:innen innere Organe näher" />
+    <meta name="author" content="p-seminar" />
+    <meta name="desciption" content="Wir bringen Schüler:innen innere Organe näher" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <Umami />
   </head>
   <body>
-    <div class="layout">
-      <div id="impressum-content">
+  <main>
         <h1>Impressum</h1>
         <h2>Angaben gemäß §18 MStV</h2>
         <p>
@@ -62,7 +62,6 @@ import Umami from "../components/umami.astro";
           möglichst gute Zugänglichkeit der Information sorgen unter beibehalt
           einer FLOSS Lizenz. 
         </p>
-      </div>
-    </div>
+      </main>
   </body>
 </html>

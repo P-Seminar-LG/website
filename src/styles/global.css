@@ -8,6 +8,12 @@
     src: url(/fonts/barlowbold.ttf);
 }
 
+@font-face {
+    font-family: inter;
+    src: url(/fonts/inter.ttf);
+}
+
+
 * {
     margin: 0;
     padding: 0;
