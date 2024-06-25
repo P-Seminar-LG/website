@@ -109,6 +109,10 @@ main h2 {
 }
 
 
+main img {
+    width: clamp(75ch, 80%, 200px);
+}
+
 
 
 /* Mobile Layout */ 
