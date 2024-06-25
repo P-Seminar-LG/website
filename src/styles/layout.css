@@ -55,6 +55,8 @@ nav #cat img {
 
 nav h1 {
     font-size: var(--navbar-heading-fsize);
+    margin-bottom: 1rem;
+    
 }
 
 nav h2 {
