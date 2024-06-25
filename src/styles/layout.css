@@ -19,12 +19,6 @@
     font-family: barlowbold;
 }
 
-/*For a better readability and look, every line should only contain 45-70 charakters*/
-
-p, li {
-    max-width: 60ch;
-}
-
 
 /* NAVBAR Styling*/
 
@@ -113,6 +107,12 @@ main img {
     width: clamp(75ch, 80%, 200px);
 }
 
+
+/*For a better readability and look, every line should only contain 45-70 charakters*/
+
+main p, main li {
+    width: 60ch;
+}
 
 
 /* Mobile Layout */ 
