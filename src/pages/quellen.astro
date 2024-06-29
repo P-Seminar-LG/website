@@ -1,20 +1,68 @@
 ---
-import "../styles/extra.css"
-import Umami from "../components/umami.astro"
+import "../styles/extra.css";
+import "../styles/global.css";
+import Umami from "../components/umami.astro";
 ---
 
 <html lang="de">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" />
-        <meta name="generator" content={Astro.generator} />
-        <title>Quellen</title>
-        <Umami />
-    </head>
-    <body>
-        <h1>Quellen</h1>
-        <h2>Lunge</h2>
-        <h2>Herz</h2>
-        <h2>Gehirn</h2>
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Quellen</title>
+    <Umami />
+  </head>
+  <body>
+    <main>
+    <h1>Quellen</h1>
+    <p>Wir haben unsere Informationen von verschiedensten Quellen gesammelt und für euch bereitgestellt. Hier findet ihr diese ursprünglichen Quellen :D</p>
+    <h2>Lunge</h2>
+    <ol>
+      <li>
+        <p>
+          <a
+            href="https://www.rki.de/DE/Content/Gesundheitsmonitoring/Themen/Chronische_Erkrankungen/lungenerkrankungen/lungenerkrankungen_node.html"
+            >https://www.rki.de/DE/Content/Gesundheitsmonitoring/Themen/Chronische_Erkrankungen/lungenerkrankungen/lungenerkrankungen_node.html</a>
+        </p>
+      </li>
+      <li>
+        <p>
+          <a
+            href="https://ourworldindata.org/grapher/lung-cancer-deaths-per-100000-by-sex-1950-2002?country=~DEU"
+            >https://ourworldindata.org/grapher/lung-cancer-deaths-per-100000-by-sex-1950-2002?country=~DEU</a>
+        </p>
+      </li>
+      <li>
+        <p>
+          <a
+            href="https://www.who.int/health-topics/chronic-respiratory-diseases#tab=tab_2"
+            >https://www.who.int/health-topics/chronic-respiratory-diseases#tab=tab_2</a>
+        </p>
+      </li>
+      <li>
+        <p>
+          <a
+            href="https://www.who.int/news-room/fact-sheets/detail/chronic-obstructive-pulmonary-disease-(copd)"
+            >https://www.who.int/news-room/fact-sheets/detail/chronic-obstructive-pulmonary-disease-(copd)</a>
+        </p>
+      </li>
+      <li>
+        <p>
+          <a
+            href="https://pneumologie.de/storage/app/media/uploaded-files/20230320_Weißbuch_Lunge_2023.pdf"
+            >https://pneumologie.de/storage/app/media/uploaded-files/20230320_Weißbuch_Lunge_2023.pdf</a>
+        </p>
+      </li>
+      <li>
+        <p>
+          <a
+            href="https://www.ukw.de/medizinische-klinik-i/pneumologie/schwerpunkte/erkrankungen-der-atemwege/"
+            >https://www.ukw.de/medizinische-klinik-i/pneumologie/schwerpunkte/erkrankungen-der-atemwege/</a>
+        </p>
+      </li>
+    </ol>
+    <h2>Herz</h2>
+    <h2>Gehirn</h2>
+    </main>
+  </body>
 </html>

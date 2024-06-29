@@ -67,14 +67,16 @@ header p {
     margin-left: auto;
 }
 
-#impressum {
+#infobox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    gap: 1rem;
+    margin: auto 0 2rem 2rem;
     font-family: barlow;
-    text-decoration: none;
-    color: var(--color-text);
-    font-size: 1.5rem;
-    margin: auto 0 2rem 2rem
 }
-
 
 /* Zoom Effect */
 
