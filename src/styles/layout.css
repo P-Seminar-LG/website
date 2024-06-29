@@ -70,6 +70,7 @@ main {
     gap: 1rem;
     align-items: center;
     overflow-y: scroll;
+    padding-bottom: 3rem;
 }
 
 /*The OVER heading*/
