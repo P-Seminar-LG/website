@@ -1,0 +1,14 @@
+#int-heart {
+    position: relative;
+}
+
+#path296::after {
+    content: "Aorta";
+    background-color: black;
+    color: white;
+    border-radius: 2rem;
+    position: absolute;
+    z-index: 5;
+    height: 200px;
+    width: 800px;
+}
