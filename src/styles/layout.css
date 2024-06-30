@@ -109,8 +109,17 @@ main h2 {
 
 
 main img, #content-warning img, .main-img {
-    width: clamp(75ch, 80%, 200px);
+    width: clamp(200px, 60ch, 95vw);
 }
+
+/*For a better readability and look, every line should only contain 45-70 charakters // Capped for responsive mobile layout */
+
+main p, main li {
+    width: clamp(0px, 60ch, 95vw);
+}
+
+
+/* The Content warning section*/
 
 #content-warning {
     display: flex;   
@@ -119,21 +128,17 @@ main img, #content-warning img, .main-img {
     display: none;
 }
 
+/* CW Button */
 
 #cw-toggle {
     padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 95vw;
 }
 
 
-
-/*For a better readability and look, every line should only contain 45-70 charakters*/
-
-main p, main li {
-    width: 60ch;
-}
 
 
 /* Mobile Layout */ 
