@@ -81,6 +81,11 @@ header p {
 }
 
 
+
+#infobox {
+    margin: auto 0 2rem 2rem;
+}
+
 /* Zoom Effect */
 
 .zoom_transition:hover {

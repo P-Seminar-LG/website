@@ -59,7 +59,7 @@ nav h2 {
 
 
 nav #infobox {
-    margin-top: auto;
+    margin: auto 0 2rem 0;
 }
 
 
@@ -152,6 +152,10 @@ main p, main li {
 
     main {
         overflow-y: visible;
+    }
+
+    #infobox {
+    margin: 2rem 0 2rem 0  !important;
     }
 }
 
