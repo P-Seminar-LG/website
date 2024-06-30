@@ -104,7 +104,7 @@ main h2 {
 }
 
 
-main img, #content-warning img {
+main img, #content-warning img, .main-img {
     width: clamp(75ch, 80%, 200px);
 }
 
