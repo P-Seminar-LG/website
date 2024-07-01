@@ -4,3 +4,7 @@
     --headline-icon: url("/img/heart.webp");
 }
 
+#interactive-heart {
+    overflow: visible;
+    overflow-clip-margin: 0;
+  }

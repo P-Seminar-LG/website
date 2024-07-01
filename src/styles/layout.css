@@ -108,7 +108,7 @@ main h2 {
 }
 
 
-main img, #content-warning img, .main-img {
+main img, #content-warning img, .main-img, #interactive-heart {
     width: clamp(200px, 60ch, 95vw);
 }
 
