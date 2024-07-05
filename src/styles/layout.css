@@ -139,6 +139,13 @@ main p, main li {
 }
 
 
+#funfact {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: clamp(40px, 40ch, 30%);
+}
+
 
 
 /* Mobile Layout */ 
@@ -156,6 +163,10 @@ main p, main li {
 
     #infobox {
     margin: 2rem 0 2rem 0  !important;
+    }
+
+    #funfact {
+        position: static;
     }
 }
 
