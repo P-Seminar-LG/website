@@ -4,10 +4,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-    width: 60ch;
     font-family: inter;
+    max-width: 60ch;
 }
 
 main {
     margin: 1rem 0 1rem 5rem;
+}
+
+li {
+    width: 60ch;
+    overflow-wrap: break-word;
+}
+
+
+h1 a {
+    text-decoration: none;
+    color: black;
 }
