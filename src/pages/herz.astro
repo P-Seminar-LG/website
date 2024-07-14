@@ -34,7 +34,10 @@ import Infobox from "../components/infobox.astro";
           <Iheart />
           <script is:inline>
             document.querySelectorAll("#interactive-heart path").forEach(element => { element.addEventListener("mouseover", (event) => {
-              let lookingat = event.target.dataset.description; 
+              let lookingat = event.target.dataset.description;
+              if (lookingat === undefined) {
+                lookingat = "..."
+              }
               document.querySelector("#test1234").textContent = lookingat;
             })})
           </script>
